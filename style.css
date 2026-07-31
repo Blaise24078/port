@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 /* Styles */
@@ -5,40 +7,35 @@ body {
     font-family: system-ui, sans-serif;
     margin: 0;
     padding: 2rem;
-    background: #1a1a2e;
+    background: #0f0f12;
     color: #e0e0ff;
 }
-
-p {
-    opacity: 0.7;
+.abr {
+    margin-left: 30px;
 }
-
+p {
+    opacity: 0.8;
+}
 .pixel {
     font-family: "Silkscreen", sans-serif;
 }
-
 .large {
     font-size: 50px;
 }
-
 .centered {
     text-align: center;
 }
-
 .orange {
     color: #ff6b1a;
 }
-
 .boxed {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 30px;
     
 }
-
 .other-font {
-    font-family: "Zen Dots", sans-serif;
+    font-family: "Stack Sans Headline", sans-serif;
 }
-
 .top-arc {
     position: absolute;
     top: 0;
@@ -48,12 +45,74 @@ p {
     background: radial-gradient(#6366f1, #ec4899);
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
 }
-
 a {
-    font-size: 20px;
+    font-size: auto;
     color: white;
+    text-decoration: none;
 }
-
 a:hover {
     color: blue;
+}
+/*
+button {
+    background-color: blue;
+    border-radius: 30px;
+    font-size: 20px;
+    border-color: rgb(0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    display: inline-block;
+}
+*/
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5a25eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    border-width: 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+button:hover {
+    background: #3e1aa1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.large-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.card {
+    display: block;
+    padding: 1.5rem;
+    background: #1e1e24;
+    border: 1px solid #0d0521;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+.cntr {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border: 2px solid #0d0521;
+    border-radius: 4px;
 }
